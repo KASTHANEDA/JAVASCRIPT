@@ -32,4 +32,8 @@ for (var i=0; i<personas.length; i++ )
     document.write('USUARIO: '+i+' es '+personas[i].username+'<br>')
 }
 
+personas.forEach(element => console.log(element), );
+
+
+
 /* laura.saludar(); */

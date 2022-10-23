@@ -2,42 +2,48 @@
 debugger;
   let cont=0;
   debugger;
-
-  function oKContrasena() {
-    location.replace("login.html")
-    alert(usuario + "// "+ clave +" INGRESO OK"); 
-  }
-
-  
-  function badContrasena() {
-    location.replace("bloqueado.html")
-    
-    alert("CLAVE ERRADA");
-  }
+  var j=0;
   
 function getcube(){  
     var claveOk=111;
     var i;
+    
+    var clave=document.getElementById("clave").value; 
  
   /*   alert(usuario + "// "+ clave);  */
     
-        for ( i = 0; i < 4; i++) {
+        
             if( clave ==claveOk){
               
               var usuario=document.getElementById("usuario").value;  
-              var clave=document.getElementById("clave").value; 
+              
                 return oKContrasena();
                 
-            }
-            alert(i+ "intentos");
-        }
-        alert(i+ "jjjj intentos");
-        if (i==4){
-          badContrasena()
-        }
-           
+            }                           
+            
+        
+         else {
+           j++;     
+          alert("LLEVAS "+j+"INTENTOS");
+          if (j==3){
+            badContrasena()
+          }
+          
+        }          
    
      }
+
+     function oKContrasena() {
+      location.replace("login.html")
+      alert(usuario + "// "+ clave +" INGRESO OK"); 
+    }
+  
+    
+    function badContrasena() {
+      location.replace("bloqueado.html")
+      
+      alert("CLAVE ERRADA");
+    }
 
 
      

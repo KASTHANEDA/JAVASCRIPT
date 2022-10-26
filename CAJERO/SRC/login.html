@@ -12,13 +12,16 @@
 <!-- OTRO -->
 
 
-<form>  
-  <h5>Fecha<p id="date"></p></h1>
-  <h5>Cajero: <p id="numCajero"></p></h1>
-    usuario: <input type="text" id="usuario" name="usuario"/><br/>  
-    clave: <input type="text" id="clave" name="clave"/><br/> 
-    <input type="button" value="Ingresar" onclick="getcube()"/>  
-    </form>  
+<form action="">  
+    <h1>LOGIN</h1>
+    <label for="u">Usuario</label>
+    <input type="text" name="usuario" id="u">
+    <label for="c">Clave</label>
+    <input type="text" name="clave" id="c">
+    <input type="button" value="Ingresar" onclick="login(this.form)">
+    
+      
+    </form>
   
   <!-- Formulario simple que enviará una petición POST -->
 

@@ -26,18 +26,18 @@ document.getElementById("numCajero").innerHTML = getRandomInt(100);
 
 
 
-function getcube(){  
+function login(form){  
   let claveOk=111;
   var i;
   
-  var clave=document.getElementById("clave").value; 
+  var clave=document.getElementById("c").value; 
 
 /*   alert(usuario + "// "+ clave);  */
   
       
           if( clave ==claveOk){
             
-            var usuario=document.getElementById("usuario").value;  
+            var usuario=document.getElementById("u").value;  
             
               return oKContrasena();
               

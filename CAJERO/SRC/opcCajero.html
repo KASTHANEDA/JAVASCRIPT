@@ -8,13 +8,25 @@
 </head>
 <body>
     <div>
-        <ul>
-            <input type="text" id="Cajero">
-            <li><a href="consultar.html" onclick="consulta()">Consultar</a></li>
-            <li><a href="retirar.html">Retirar</a></li>
-            <li><a href="consignar.html">consignar</a></li>
-            <li><a href="pagarservicios.htlm">Pagar servicios</a></li>
-          </ul>
+
+            <h1>Bienvenido</h1>
+            <label for="CA">SALDO DE CUENTA AHORROS</label>
+            <input type="text" name="CA" id="CA" value="50000000">
+            <label for="CC">SALDO CUENTA CORRIENTE</label>
+            <input type="text" name="CC" id="CC" value="55220">
+            <form action="" >
+                <h2>tranferencias</h2>
+                <input type="text" name="" id="Cant" placeholder="cantidad">
+                <hr>
+                <input type="button" value="Transferencia CA a CC" id="bt2" onclick="transferenciaCACC()">
+                <input type="button" value="Transferencia CC a CA" id="bt3" onclick="transferenciaCCCA()">
+                <input type="button" value="Consignacion CA" id="bt4" onclick="consignacionCA()">
+                <input type="button" value="Consignacion CC" id="bt5" onclick="consignacionCC()">
+                <input type="button" value="Retiro CA" id="bt6" onclick="RetirarCA()">
+                <input type="button" value="Retiro CC" id="bt7" onclick="RetirarCC()">
+            </form>
+
+
     </div>
     <script src="consulta.js"></script>
 </body>

@@ -1,0 +1,19 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "primer paso",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KASTHANEDA/JAVASCRIPT.git"
+  },
+  "author": "jAIRO ANDRES CASTAÑEDA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KASTHANEDA/JAVASCRIPT/issues"
+  },
+  "homepage": "https://github.com/KASTHANEDA/JAVASCRIPT#readme"
+}
